@@ -1,7 +1,7 @@
 # QuizMaster Assessment Portal
 A robust React-based quiz application built as part of the Software Engineer Intern evaluation for **CausalFunnel**. This application allows users to take a 15-question assessment with real-time tracking, persistent state management, and detailed performance reporting.
 
-**Live Demo:** [Insert Link Here]
+**Live Demo:** https://quizapp-frontend-9437.onrender.com/
 
 ---
 

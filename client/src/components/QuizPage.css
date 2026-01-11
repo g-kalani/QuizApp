@@ -1,0 +1,80 @@
+/* Quiz page styles */
+
+.quiz-nav-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-start !important; 
+}
+
+/* Nav buttons */
+.btn-nav {
+    width: 42px !important;
+    height: 42px !important;
+    min-width: 42px !important;
+    font-size: 0.95rem !important;
+    position: relative !important;
+    overflow: hidden !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px !important;
+    padding: 0 !important;
+    border: 1px solid #dee2e6 !important;
+    background-color: #ffffff !important; /* Default Unvisited */
+    color: #adb5bd !important; 
+    transition: all 0.2s ease;
+}
+
+/* Visited state */
+.nav-visited {
+    border: 1.5px solid #0dcaf0 !important;
+    color: #0dcaf0 !important;
+}
+
+/* Answered state */
+.nav-answered {
+    background-color: #198754 !important;
+    color: #ffffff !important;
+    border: none !important;
+}
+
+/* Keep green on hover */
+.nav-answered:hover {
+    background-color: #157347 !important; /* Darker green on hover */
+    color: #ffffff !important;
+}
+
+/* Hover effect */
+.btn-nav:not(.nav-answered):hover {
+    background-color: #f8f9fa !important;
+    border-color: #0dcaf0 !important;
+    color: #0dcaf0 !important;
+}
+
+/* Active state */
+.nav-active {
+    box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.4) !important;
+    border-color: #0d6efd !important;
+}
+
+/* Review triangle */
+.review-triangle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 14px 14px 0;
+    border-color: transparent #ffc107 transparent transparent;
+    z-index: 5;
+}
+
+/* Legend */
+.legend-item { display: flex; align-items: center; margin-bottom: 8px; font-size: 0.85rem; }
+.legend-square { width: 14px; height: 14px; border-radius: 2px; margin-right: 8px; }
+.triangle-legend {
+    width: 0; height: 0; border-style: solid; border-width: 0 10px 10px 0;
+    border-color: transparent #ffc107 transparent transparent; margin-right: 8px;
+}
